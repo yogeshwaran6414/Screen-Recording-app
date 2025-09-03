@@ -1,0 +1,176 @@
+/* App styles */
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7fafc;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.08);
+  padding: 32px 24px;
+}
+.app-title {
+  text-align: center;
+  color: #428bca;
+  margin-bottom: 24px;
+}
+.app-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.app-nav button {
+  background: #fff;
+  border: 1px solid #428bca;
+  color: #428bca;
+  padding: 10px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.app-nav .selected,
+.app-nav button:hover {
+  background: #428bca;
+  color: #fff;
+}
+.app-content {
+  margin-top: 16px;
+}
+
+/* RecordScreen styles */
+.recorder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recorder-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+.rec-btn, .stop-btn {
+  padding: 10px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #428bca;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(66,139,202,.09);
+  cursor: pointer;
+  transition: background .15s;
+}
+.stop-btn {
+  background: #d32f2f;
+}
+.rec-btn:hover, .stop-btn:hover {
+  opacity: .87;
+}
+.timer {
+  font-size: 17px;
+  font-weight: bold;
+  color: #666;
+}
+.preview-container {
+  width: 100%;
+  margin-top: 14px;
+  text-align: center;
+}
+.preview-player {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.14);
+}
+.preview-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.preview-actions button {
+  padding: 9px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background: #428bca;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.preview-actions button:hover {
+  background: #357ec7;
+}
+.alert {
+  margin: 10px 0 0 0;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.success { background: #e4fde1; color: #228B22; }
+.error { background: #ffeeee; color: #d32f2f; }
+.loading-bar {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #428bca;
+  border-radius: 50%;
+  border-top: 5px solid #f7fafc;
+  animation: spin 1s linear infinite;
+  margin-bottom: 8px;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+/* RecordingsList styles */
+.recordings-list {
+  margin-top: 10px;
+}
+.no-recordings {
+  text-align: center;
+  padding: 32px;
+  color: #aaa;
+  font-size: 19px;
+  background: #f2f8fc;
+  border-radius: 10px;
+}
+.rec-list-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0,0,0,.07);
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+.rec-list-table th, .rec-list-table td {
+  font-size: 15px;
+  padding: 9px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  color: #222;
+}
+.rec-list-player {
+  width: 160px;
+  border-radius: 4px;
+  box-shadow: 0 1px 9px rgba(66,139,202,.10);
+}
+
+.delete-btn {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.delete-btn:hover {
+  background: #a72828;
+}
